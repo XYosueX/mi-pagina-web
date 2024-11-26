@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <header>
       <h1>Mi Biografia</h1>
     </header>
 
-    <h2>Capitulo 1</h2>
+    <nav>
+      <ul>
+          <li><a href="#cap1">INICIO</a></li>
+          <li><a href="#redes">REDES SOCIALES</a></li>
+          <li><a href="#hobbies">PASATIEMPOS</a></li>
+          <li><a href="#horario">HORARIO</a></li>
+          <li><a href="#form">CONTACTENOS</a></li>
+      </ul>
+  </nav>
+  <div class="contenedor">
+    <h2  id="cap1">Capítulo 1</h2>
     <p>
       Josué Caipa es un ingeniero telemático de 30 años, nacido y residente en
       la vibrante ciudad de Barranquilla, Colombia. Apasionado por la tecnología
@@ -33,21 +44,23 @@
     </p>
 
     <img style="width: 350px; height: 200px" src="img/foto.webp" alt="" />
+  </div>
     <hr />
-    <h3>Rede Sociales:</h3>
+    <h3 id="redes">Rede Sociales:</h3>
 
-    <a href="https://www.instagram.com/__j05u3d4v1d__/">Instagram</a>
-    <a href="linkedin.com/in/josué-caipa-118814206">Likedind</a>
-
+    <div class="sociales">
+    <a href="https://www.instagram.com/__j05u3d4v1d__/">Instagram  🍎</a>
+    <a href="linkedin.com/in/josué-caipa-118814206">Likedind  🌐</a>
+  </div>
     <hr />
-    <h3>Pasatiempos</h3>
+    <h3 id="hobbies">Pasatiempos</h3>
     <ul>
       <li>Explorar nuevas tecnologías:</li>
       <li>Ciclismo urbano:</li>
       <li>Videojuegos:</li>
     </ul>
     <hr />
-    <h3>Lista de pendientes de Josué</h3>
+    <h3 id="horario">Lista de pendientes de Josué</h3>
     <ol>
       <li>Terminar Laboratorios del curso de programacion</li>
       <li>
@@ -60,7 +73,7 @@
     <hr />
     <br />
     <h3>HORARIO PARA PENDIENTES DE JOSUÉ</h3>
-    <table border="1">
+    <table class="tabla" border="1">
       <thead>
         <tr>
           <th>hora</th>
@@ -117,12 +130,22 @@
 <hr>
 <br>
 <br>
-<form action="">
+
+<div class="container">
+<form id="form" action="" class="formulario">
+  <label for="">ENVIAR SUS COMENTARIOS</label>
     <input type="text" placeholder="Ingrese su Nombre">
     <textarea name="" id="" placeholder="Describa aqui Su solicitud"></textarea>
     <input type="email" placeholder="Ingrese su Correo">
     <button>Enviar</button>
 </form>
+</div>
 
-  </body>
+<hr>
+<footer>
+  <p>
+      &copy; 2024 Mi pagina Web, Todos los derechos reservado 
+  </p>
+</footer>
+</body>
 </html>
