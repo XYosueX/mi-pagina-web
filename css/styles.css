@@ -8,8 +8,7 @@ body{
 header{
     background-color: rgb(246, 250, 7);
     text-align: center;
-    padding: 1px;
-    height: 40px;
+    height: 20px;
     padding-bottom: 30px;
 }
 
@@ -18,26 +17,31 @@ header h1{
 }
 
 nav{
-    background-color: #c5c1c1;
-    text-align: center;
-    padding: 10px 0;
+    background: #c5c1c1;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+    float: left;
+}
+
+nav ul li {
+ list-style: none;
 }
 
 
 nav ul li a {
-    color: rgb(5, 5, 5);
+    padding: 10px 20px;
+    color: black;
+    display: block;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    
 }
 
 nav ul li a:hover {
-    color: rgb(0, 26, 255);
+    background: #4CAF50;
 }
 
 .contenedor {
@@ -77,25 +81,46 @@ footer {
     background-color: rgb(113, 238, 134);
   }
 
-  .formulario {
 
+  .container{
+    width: 30%;
+	margin: auto;
+	padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+	border-radius: 10px;
+}
+
+  .formulario {
+    background-color: rgb(251, 255, 0);
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000;
   }
 
   input, textarea{
-    width: 500px;
-    padding: 10px;
     margin-bottom: 15px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    border: 1px solid #a77373;
 }
 
-.container{
-	max-width: 550px;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: #fff;
-	border-radius: 12px;
-	box-shadow: 0 0 10px rgb(0,0,0.2);
+input[type="submit"] {
+    margin-bottom: 0%;
+    background: #FA2523;
+    color: #fff;
+    border-radius: 10px;
 }
+
+input[type="submit"]:hover {
+    background: #50f050;
+    cursor: pointer;
+    color: #000;
+}
+
+
 
